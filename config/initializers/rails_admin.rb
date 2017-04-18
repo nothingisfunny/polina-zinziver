@@ -5,7 +5,9 @@ RailsAdmin.config do |config|
       field :name
       field :description
       field :image_link
-      field :cover
+      field :cover do
+        thumb_method :thumb
+      end
     end
   end
   ### Popular gems integration
