@@ -1,0 +1,35 @@
+
+ <div class="container">
+	<% @projects.in_groups_of(3).each do |projects| %>
+		<% if projects[0] != nil %>
+		<div class="col-sm-4">
+			<%= link_to project_path(projects[0]) do %>
+				<div class="image white center-block">
+					<h1 class="text"><%= projects[0].name%></h1>
+			 		<%= image_tag(projects[0].image_link)%>
+			 	</div>
+			<% end %>
+		</div>
+		<% end %>
+		<% if projects[1] != nil %>
+		<div class="col-sm-4">
+			<%= link_to project_path(projects[1]) do %>
+				<div class="image blue center-block">
+					<h1 class="text"><%= projects[1].name%></h1>
+			 		<%= image_tag(projects[1].image_link) %>
+			 	</div>
+			<% end %>
+		</div>
+		<% end %>
+		<% if projects[2] != nil %>
+		<div class="col-sm-4">
+			<%= link_to project_path(projects[2]) do %>
+				<div class="image red center-block">
+					<h1 class="text"><%= projects[2].name%></h1>
+			 		<%= image_tag(projects[2].image_link) %>
+			 	</div>
+			<% end %>
+		</div>
+		<% end %>
+	<% end %>	
+</div> 
