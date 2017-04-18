@@ -14,15 +14,25 @@
 	overflow: hidden;
 	}
 
+.image.white{
+	margin-left: 0;
+}
 
+.image.blue{
+	margin: 0 auto;
+}
+
+.image.red{
+	margin-right: 0;
+	float:right;
+}
 .image.white:hover:after {
 	content:""; 
 	position:absolute; 
 	top:0; 
 	left:0; 
 	bottom:0; 
-	right:0; 
-	
+	right:0;
 	background-color: white; 
 	opacity: 0.5;
 	}
@@ -65,4 +75,8 @@
   -ms-transform: translate(-50%, -50%);
   visibility: hidden;
   z-index: 20;
+}
+
+.thumb{
+	margin: 0 auto;
 }
