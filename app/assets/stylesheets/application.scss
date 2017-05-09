@@ -13,55 +13,24 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome";
 
- .social li a{
-	float: left;
-	line-height: 50px;
-	padding: 15px 10px;
-}
-
-@media (min-width: 1200px){
-	.menu{
-		padding-left: 40%;
-	}
-}
 
 
 @media (max-width: 768px){
 	.social{
 		display: none;
 	}
-	.menu{
-		float: right;
-	}
 }
 
-.navbar-nav > li > a {
-	line-height: 50px;
-	color: black;
-}
+
 
 .navbar-brand{
-	line-height: 50px;
 	font-family: 'Hind', sans-serif;
 	font-size: 2em;
 	text-align: center;
 	}
-
-.navbar-default{
-	background-color: transparent;
-	border: none;
+.navbar .navbar-toggleable-md .navbar-light .bg-faded{
+	min-height: 200px;
 }
-
-//* color nav text black *//
-.navbar-default .navbar-brand{
-	color: black;
-}
-
-.navbar-default .navbar-nav > li > a{
-	color: black;
-}
-
-

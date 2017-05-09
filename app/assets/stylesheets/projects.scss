@@ -80,3 +80,50 @@
 .thumb{
 	margin: 0 auto;
 }
+
+#project {
+    display: none;
+    cursor: pointer;
+    background: rgba(0,0,0,0.7);
+    clear: both;
+    position: fixed;
+    padding: 0 80px;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 9999;
+    }
+
+    .entry {
+    position: relative;
+    display: block;
+    margin: 80px auto;
+    padding: 60px 60px 40px 60px;
+    background: #fff;
+    cursor: auto;
+    z-index: 10;
+}
+
+.project_nav a img {
+    height: 12px;
+    width: 7px;
+}
+
+.project_nav a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #e7e7e7;
+    border-left: 1px solid #ccc;
+    font-size: 0;
+    color: #666;
+    line-height: 0;
+}

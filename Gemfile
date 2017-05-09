@@ -1,9 +1,15 @@
 source 'https://rubygems.org'
 
+#Use Font Awesome icons
+gem "font-awesome-rails"
 #Use rails admin
 gem 'rails_admin'
 #Use bootstrap
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+#Use tether for bootstrap
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record

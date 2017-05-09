@@ -5,6 +5,7 @@ RailsAdmin.config do |config|
       field :name
       field :description
       field :image_link
+      field :project_images
       field :cover do
         thumb_method :thumb
       end
